@@ -1,0 +1,85 @@
+.register {
+  max-width: 420px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+.register-signin-button,
+.register-signin-button:visited {
+  color: #000;
+}
+
+.register-name-input,
+.register-email-input,
+.register-pwd-input,
+.register-submit {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.register-label,
+.register-submit {
+  margin-top: 1rem;
+}
+
+.register-submit {
+  padding: 0.5rem;
+}
+
+.register-instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.register-instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.register-offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.register-hide {
+  display: none;
+}
+
+.register-valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.register-invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.register-errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.register-line {
+  display: inline-block;
+}

@@ -1,0 +1,102 @@
+.login {
+  min-width: 350px;
+
+  max-width: 400px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: #393e59;
+  border-radius: 1rem;
+  margin-top: 2rem;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-top: 3rem;
+}
+
+.login-title {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  padding: 0.5rem;
+  background-color: #010326;
+  width: 40%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -31.5%);
+}
+
+.login-signup-button,
+.login-signup-button:visited {
+  color: whitesmoke;
+}
+
+.login-name-input,
+.login-pwd-input,
+.login-signin-button {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  background-color: whitesmoke;
+}
+
+.login-name-input {
+  margin-bottom: 0.8rem;
+}
+
+.login-signin-button {
+  background-color: #010326;
+  color: whitesmoke;
+}
+
+.login-label {
+  color: whitesmoke;
+}
+
+.login-signin-button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+.login-signup-button {
+  padding: 1rem;
+}
+
+.login-offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.login-errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-text {
+  color: whitesmoke;
+  margin-top: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.login-line {
+  display: inline-block;
+}
