@@ -1,17 +1,18 @@
 import "./App.scss";
-import openSocket from "socket.io-client";
 import Header from "./components/Header";
-import Register from "./components/Register";
+import Home from "./components/Home";
 import Login from "./components/Login";
+import Register from "./components/Register";
 import Video from "./components/Video";
 
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
+      <Header />
+      {/* <Home /> */}
       {/* <Login /> */}
       {/* <Register /> */}
-      <Video />
+      {/* <Video /> */}
     </div>
   );
 }

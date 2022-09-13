@@ -1,7 +1,5 @@
 .login {
-  min-width: 350px;
-
-  max-width: 400px;
+  max-width: 340px;
   min-height: 260px;
   display: flex;
   flex-direction: column;
@@ -11,7 +9,7 @@
   border-radius: 1rem;
   margin-top: 2rem;
 
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
