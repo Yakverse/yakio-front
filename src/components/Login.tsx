@@ -109,7 +109,7 @@ const Login = () => {
           <p className="login-text">
             Need an Account?
             <span className="login-line">
-              <a className="login-signup-button" href="#">
+              <a className="login-signup-button" href="register">
                 Register now
               </a>
             </span>

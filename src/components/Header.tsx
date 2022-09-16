@@ -5,7 +5,7 @@ import YakLogo from "../assets/yaklogosemfundo.png";
 import "../styles/Header.scss";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faUser } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 const Header = () => {
@@ -15,17 +15,24 @@ const Header = () => {
     <BrowserRouter>
       <nav className="header">
         <div className="header-leftside">
-          <img src={YakLogo} alt="Yak Logo" className="header-logo" />
-          <h1 className="header-title">YakIO</h1>
-        </div>
-        <div className="header-rightside">
           <button
             onClick={() => {
               setIsMenuOpen(!isMenuOpen);
             }}
-            className="header-button"
+            className="header-button-left"
           >
             <FontAwesomeIcon icon={faBars} />
+          </button>
+        </div>
+
+        <div className="header-center">
+          <img src={YakLogo} alt="Yak Logo" className="header-logo" />
+          <h1 className="header-title">YakIO</h1>
+        </div>
+
+        <div className="header-rightside">
+          <button className="header-button-right">
+            <FontAwesomeIcon icon={faUser} />
           </button>
         </div>
         <div className={isMenuOpen ? "header-menu expanded" : "header-menu"}>
@@ -36,19 +43,25 @@ const Header = () => {
             <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
               <Link to="/register">Register</Link>
             </li>
-            {/* <li>
-              <Link href="/about">About</Link>
+            <li>
+              <Link to="/login">Log in</Link>
             </li>
             <li>
-              <Link href="/contact">Contact</Link>
-            </li> */}
+              <Link to="/about">About us</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link to="/terms">Service Terms</Link>
+            </li>
           </ul>
         </div>
       </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/register" element={<Register />} />
+        {/* <Route path="/register" element={<Register />} /> */}
         {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} /> */}
       </Routes>

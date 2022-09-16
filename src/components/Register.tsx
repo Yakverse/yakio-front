@@ -304,7 +304,7 @@ const Register = () => {
             Already registered?
             <br />
             <span className="register-line">
-              <a className="register-signin-button" href="#">
+              <a className="register-signin-button" href="/">
                 Sign in
               </a>
             </span>

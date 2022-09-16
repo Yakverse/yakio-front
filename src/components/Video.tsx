@@ -4,13 +4,16 @@ import { useRef } from "react";
 import "../../node_modules/video-react/styles/scss/video-react.scss";
 import {
   Player,
+  BigPlayButton,
+  ForwardControl,
+  ReplayControl,
   ControlBar,
   PlayToggle,
-  BigPlayButton,
-  PlayerReference
+  ClosedCaptionButton,
+  VolumeMenuButton
 } from "video-react";
 
-const socketVideo = io("ws://0.tcp.sa.ngrok.io:17000/video", {
+const socketVideo = io("ws://0.tcp.sa.ngrok.io:10304/video", {
   transports: ["websocket"]
 });
 
@@ -68,15 +71,21 @@ const Video = () => {
     <div>
       <Player
         ref={videoRef}
-        // id="area"
-        // controls="controls"
         preload="metadata"
         src={url}
+        width={1000}
+        height={500}
+        fluid={false}
       >
+        <track kind="captions" src="#" srcLang="pt-br" label="Português" />
         <BigPlayButton position="center" />
-        {/* <ControlBar autoHide={false} disableDefaultControls={false}>
+        <ControlBar>
           <PlayToggle />
-        </ControlBar> */}
+          <ReplayControl seconds={10} />
+          <ForwardControl seconds={10} />
+          <VolumeMenuButton vertical />
+          <ClosedCaptionButton order={7} />
+        </ControlBar>
       </Player>
     </div>
   );
