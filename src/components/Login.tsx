@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Login.scss";
 import { useRef, useState, useEffect, useContext } from "react";
 import AuthContext from "../context/AuthProvider";
+import { Link } from "react-router-dom";
 
 import axios from "../api/axios";
 const LOGIN_URL = "/ok";
@@ -109,9 +110,17 @@ const Login = () => {
           <p className="login-text">
             Need an Account?
             <span className="login-line">
-              <a className="login-signup-button" href="register">
+              <Link className="login-signup-button" to="/register">
                 Register now
-              </a>
+              </Link>
+            </span>
+          </p>
+          <p className="login-text2">
+            Forgot your user/password?
+            <span className="login-line2">
+              <Link className="login-signup-button2" to="/">
+                Click here
+              </Link>
             </span>
           </p>
         </section>

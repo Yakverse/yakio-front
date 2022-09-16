@@ -1,6 +1,7 @@
-import React from "react";
 import Home from "../components/Home";
 import Register from "../components/Register";
+import Login from "./Login";
+import Video from "./Video";
 import YakLogo from "../assets/yaklogosemfundo.png";
 import "../styles/Header.scss";
 import { useState } from "react";
@@ -43,16 +44,16 @@ const Header = () => {
             <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
               <Link to="/register">Register</Link>
             </li>
-            <li>
+            <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
               <Link to="/login">Log in</Link>
             </li>
-            <li>
+            <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
               <Link to="/about">About us</Link>
             </li>
-            <li>
+            <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
               <Link to="/contact">Contact</Link>
             </li>
-            <li>
+            <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
               <Link to="/terms">Service Terms</Link>
             </li>
           </ul>
@@ -61,7 +62,9 @@ const Header = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/register" element={<Register />} /> */}
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/video" element={<Video />} />
         {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} /> */}
       </Routes>

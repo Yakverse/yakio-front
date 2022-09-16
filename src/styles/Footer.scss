@@ -1,0 +1,18 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  justify-content: center;
+  z-index: -1;
+}
+
+.footer-logo {
+  height: 4rem;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  color: #393e59;
+}

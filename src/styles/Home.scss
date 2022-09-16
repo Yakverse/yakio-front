@@ -15,7 +15,7 @@
   width: 80vw;
   height: 70vh;
   background-color: #393e59;
-  margin-top: 3rem;
+  margin-top: 2rem;
   border-radius: 1.5rem;
 
   position: absolute;
@@ -32,6 +32,7 @@
   width: 90%;
   height: 35%;
   color: whitesmoke;
+  border: 1px solid whitesmoke;
 }
 
 .home-room-code-title {
@@ -87,6 +88,11 @@
   cursor: pointer;
 }
 
+.home-room-button a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 .home-division {
   width: 90%;
   height: 1px;
@@ -103,6 +109,7 @@
   background-color: #6fbfbf;
   width: 90%;
   color: whitesmoke;
+  border: 1px solid whitesmoke;
 }
 
 .home-instructions-title {
@@ -127,6 +134,7 @@
   height: 1px;
   background-color: whitesmoke;
   border-radius: 10px;
+  margin-bottom: -0.5rem;
 }
 
 .home-instruction-info {
@@ -143,19 +151,4 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-.home-footer {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-}
-
-.home-footer-logo {
-  height: 4rem;
-}
-
-.home-footer-title {
-  font-size: 1.5rem;
-  color: #393e59;
 }

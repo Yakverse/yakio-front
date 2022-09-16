@@ -6,6 +6,7 @@ import {
   faSignature,
   faUserGroup
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -18,7 +19,10 @@ const Home = () => {
             type="text"
             id="nickname"
             name="room-nickname"
-            placeholder="User 1234"
+            placeholder="User1234"
+            minLength={3}
+            maxLength={10}
+            required
           />
           <label htmlFor="code">Room code:</label>
           <input
@@ -26,19 +30,22 @@ const Home = () => {
             id="code"
             name="room-code"
             placeholder="R0OM-C0D3"
+            required
           />
           <div className="home-room-button-container">
             <button type="submit" className="home-room-button">
-              JOIN ROOM
+              <Link to="/video">JOIN ROOM</Link>
             </button>
-            <button className="home-room-button">CREATE A ROOM</button>
+            <button className="home-room-button">
+              <Link to="/register">CREATE A ROOM</Link>
+            </button>
           </div>
         </form>
 
         <div className="home-division"></div>
 
         <div className="home-instructions">
-          <h2 className="home-instructions-title">How to join your friends!</h2>
+          <h2 className="home-instructions-title">How to join your friends</h2>
           <div className="home-instructions-steps">
             <div className="home-instruction-box">
               <h4 className="home-instruction-info">
@@ -71,10 +78,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="home-footer">
-        <img src={YakLogo} alt="Yak Logo" className="home-footer-logo" />
-        <h1 className="home-footer-title">YakIO</h1>
       </div>
     </div>
   );

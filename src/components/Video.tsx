@@ -1,6 +1,6 @@
-import React from "react";
 import io from "socket.io-client";
 import { useRef } from "react";
+import "../styles/Video.scss";
 import "../../node_modules/video-react/styles/scss/video-react.scss";
 import {
   Player,
@@ -68,14 +68,14 @@ const Video = () => {
   });
 
   return (
-    <div>
+    <div className="video">
       <Player
         ref={videoRef}
         preload="metadata"
         src={url}
         width={1000}
         height={500}
-        fluid={false}
+        fluid={true}
       >
         <track kind="captions" src="#" srcLang="pt-br" label="Português" />
         <BigPlayButton position="center" />
@@ -87,6 +87,15 @@ const Video = () => {
           <ClosedCaptionButton order={7} />
         </ControlBar>
       </Player>
+      <div className="video-chat-container">
+        <h2>CHAT</h2>
+        <p>Lucas: pipipipopopo</p>
+        <p>Lucas: pipipipopopo</p>
+        <p>Lucas: pipipipopopo</p>
+        <p>Lucas: pipipipopopo</p>
+        <p>Lucas: pipipipopopo</p>
+        <p>Lucas: pipipipopopo</p>
+      </div>
     </div>
   );
 };

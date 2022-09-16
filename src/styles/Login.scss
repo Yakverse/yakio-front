@@ -1,5 +1,5 @@
 .login {
-  max-width: 340px;
+  max-width: 360px;
   min-height: 260px;
   display: flex;
   flex-direction: column;
@@ -7,11 +7,14 @@
   padding: 1rem;
   background-color: #393e59;
   border-radius: 1rem;
-  margin-top: 2rem;
+  width: 80%;
+  height: 30%;
+  padding-bottom: 3rem;
 
-  position: relative;
+  position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .login-form {
@@ -27,7 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0;
+  margin-top: 0rem;
   padding: 0.5rem;
   background-color: #010326;
   width: 40%;
@@ -76,6 +79,11 @@
   padding: 1rem;
 }
 
+.login-signup-button2 {
+  color: whitesmoke;
+  padding-left: 1rem;
+}
+
 .login-offscreen {
   position: absolute;
   left: -9999px;
@@ -93,6 +101,10 @@
   color: whitesmoke;
   margin-top: 0.8rem;
   margin-bottom: 0.2rem;
+}
+
+.login-text2 {
+  color: whitesmoke;
 }
 
 .login-line {

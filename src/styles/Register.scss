@@ -5,10 +5,18 @@
   flex-direction: column;
   justify-content: flex-start;
   padding: 1rem;
+  color: whitesmoke;
 
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.register-container {
+  margin-top: 4.5rem;
+  padding: 1rem;
+  background-color: #393e59;
+  border-radius: 1rem;
 }
 
 .register-form {
@@ -19,9 +27,24 @@
   padding-bottom: 1rem;
 }
 
+.register-title {
+  text-align: center;
+  color: whitesmoke;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: #010326;
+  width: 40%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-top: -1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
 .register-signin-button,
 .register-signin-button:visited {
-  color: #000;
+  color: whitesmoke;
 }
 
 .register-name-input,
