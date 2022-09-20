@@ -10,11 +10,23 @@
 .video-chat-container {
   width: 90%;
   height: 30%;
-  background-color: #393e59;
+  background-color: #363636;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
   border-radius: 1rem;
   padding: 1rem;
   color: whitesmoke;
+}
+
+@media screen and (min-width: 769px) {
+  .video {
+    width: 60%;
+    display: flex;
+  }
+  .video-chat-container {
+    width: 50%;
+    height: 100%;
+    margin-left: 1rem;
+  }
 }
