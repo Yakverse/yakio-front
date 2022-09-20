@@ -2,6 +2,7 @@ import Home from "../components/Home";
 import Register from "../components/Register";
 import Login from "./Login";
 import Video from "./Video";
+import Profile from "./Profile";
 import YakLogo from "../assets/yaklogosemfundo.png";
 import "../styles/Header.scss";
 import { useState } from "react";
@@ -31,11 +32,6 @@ const Header = () => {
           <h1 className="header-title">YakIO</h1>
         </div>
 
-        <div className="header-rightside">
-          <button className="header-button-right">
-            <FontAwesomeIcon icon={faUser} />
-          </button>
-        </div>
         <div className={isMenuOpen ? "header-menu expanded" : "header-menu"}>
           <ul>
             <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -58,6 +54,14 @@ const Header = () => {
             </li>
           </ul>
         </div>
+
+        <div className="header-rightside">
+          <button className="header-button-right">
+            <Link to="/profile">
+              <FontAwesomeIcon icon={faUser} />
+            </Link>
+          </button>
+        </div>
       </nav>
 
       <Routes>
@@ -65,6 +69,7 @@ const Header = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/video" element={<Video />} />
+        <Route path="/profile" element={<Profile />} />
         {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} /> */}
       </Routes>

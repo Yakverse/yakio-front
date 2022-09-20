@@ -1,0 +1,110 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 80vw;
+  height: 60vh;
+  background-color: #393e59;
+  margin-top: 4rem;
+  border-radius: 1.5rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: #201d1d;
+  box-shadow: inset -10px 10px 16px #1c1919, inset 10px -10px 16px #242121;
+  color: whitesmoke;
+}
+
+.profile-pic {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-top: -12rem;
+}
+
+.profile-edit-button {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #363636;
+  color: whitesmoke;
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.profile-info-container {
+  margin-top: 1rem;
+}
+
+.profile-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-row:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-info {
+  margin-left: 1rem;
+}
+
+textarea {
+  width: 100%;
+  height: 4rem;
+  max-height: 7rem;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.profile-division {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .profile-pic {
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: 4rem;
+  }
+  .profile-edit-button {
+    position: absolute;
+    margin-right: none;
+    margin-left: 0rem;
+    left: 5%;
+    top: 40%;
+  }
+  .profile-division {
+    display: block;
+    width: 1px;
+    height: 90%;
+    background-color: whitesmoke;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 1rem;
+    margin-right: 3rem;
+  }
+  .profile-info-container {
+    margin-top: 3rem;
+    margin-bottom: auto;
+    margin-right: 25rem;
+  }
+  textarea {
+    max-width: 15rem;
+  }
+}

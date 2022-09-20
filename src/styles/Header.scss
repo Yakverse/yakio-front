@@ -74,13 +74,17 @@
   display: none;
 }
 
+.header-button-right a {
+  color: whitesmoke;
+}
+
 .header-button-left:hover,
 .header-button-right:hover {
   background-color: #363636;
 }
 
 .header-menu {
-  z-index: 1;
+  z-index: 1000;
 }
 
 .header-menu ul {
@@ -141,6 +145,10 @@
 }
 
 @media screen and (min-width: 769px) {
+  .header-button-right {
+    display: block;
+    margin-right: 3rem;
+  }
   .header-center {
     margin-left: 14rem;
   }
