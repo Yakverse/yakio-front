@@ -1,0 +1,52 @@
+.forget-container {
+  max-width: 360px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: #363636;
+  border-radius: 1rem;
+  width: 80%;
+  height: 30%;
+  padding-bottom: 3rem;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.forget-title {
+  color: whitesmoke;
+  margin-bottom: 3rem;
+}
+
+.forget-container label {
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+
+.forget-container input {
+  width: 80%;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.forget-container button {
+  width: 50%;
+  height: 2rem;
+  margin-top: 2rem;
+  background-color: #1c1919;
+  border: none;
+  border-radius: 0.5rem;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.forget-container button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

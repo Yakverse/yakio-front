@@ -118,7 +118,7 @@ const Login = () => {
           <p className="login-text2">
             Forgot your user/password?
             <span className="login-line2">
-              <Link className="login-signup-button2" to="/">
+              <Link className="login-signup-button2" to="/forget">
                 Click here
               </Link>
             </span>

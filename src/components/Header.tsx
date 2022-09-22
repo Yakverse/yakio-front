@@ -3,6 +3,7 @@ import Register from "../components/Register";
 import Login from "./Login";
 import Video from "./Video";
 import Profile from "./Profile";
+import Forget from "./Forget";
 import YakLogo from "../assets/yaklogosemfundo.png";
 import "../styles/Header.scss";
 import { useState } from "react";
@@ -70,6 +71,7 @@ const Header = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/video" element={<Video />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/forget" element={<Forget />} />
         {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} /> */}
       </Routes>
